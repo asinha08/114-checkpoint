@@ -12,6 +12,7 @@ app.use(bodyParser.json());
 // Postgres Client Setup
 console.log("PG HOST --> " + keys.pgHost);
 console.dir(process.env);
+console.dir(keys);
 const { Pool } = require('pg');
 const pgClient = new Pool({
   user: keys.pgUser,
